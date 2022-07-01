@@ -18,10 +18,10 @@ class ListWorker:
 
     def OutputsOther(self):
         for i in range(len(self.lst)):
-            if type(self.lst[i]) is not int and not str:
+            if type(self.lst[i]) is not str or not int:
                 print((self.lst[i]))
 
-Lst = ListWorker(4, "rex", 'barbi')
+Lst = ListWorker(4, "rex", 'barbi', None, False, True, [1,2,3,4])
 
 
 Lst.OutputsStr()
